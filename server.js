@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Student Management Application." });
+  res.json({ message: "Welcome to School Management Application." });
 });
 app.use("/api", schoolRoutes);
 const PORT = process.env.PORT || 8080;
